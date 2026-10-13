@@ -164,5 +164,5 @@ foreach (int num in numbers)
    sum += num;
 }
 Console.WriteLine($"Сумма всех чисел, кроме кратных 3: {sum}");
-
+//
 //10

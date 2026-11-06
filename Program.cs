@@ -15,20 +15,20 @@
 // Console.WriteLine(found ? "Студент найден" : "Студент не найден");
 
 
-// int variant = 1;
-// bool isPrime = true;
+int variant = 1;
+bool isPrime = true;
 
-// if (variant <= 1) isPrime = false;
+if (variant <= 1) isPrime = false;
 
-// for (int divisor = 2; divisor < variant; divisor++)
-// {
-//    if (variant % divisor == 0)
-//    {
-//       isPrime = false;
-//       break;
-//    }
-// }
-// Console.WriteLine(isPrime ? "Номер варианта простой" : "Номер варианта составной");
+for (int divisor = 2; divisor < variant; divisor++)
+{
+   if (variant % divisor == 0)
+   {
+      isPrime = false;
+      break;
+   }
+}
+Console.WriteLine(isPrime ? "Номер варианта простой" : "Номер варианта составной");
 
 
 // int[] pointsPerLab = { 0, -1, 10, 9, -1, 7 };
@@ -152,17 +152,36 @@
 
 //Инд. вариант
 //3
-int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-int sum = 0;
+// int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+// int sum = 0;
 
-foreach (int num in numbers)
-{
-   if (num % 3 == 0)
-   {
-      continue;
-   }
-   sum += num;
-}
-Console.WriteLine($"Сумма всех чисел, кроме кратных 3: {sum}");
-//
+// foreach (int num in numbers)
+// {
+//    if (num % 3 == 0)
+//    {
+//       continue;
+//    }
+//    sum += num;
+// }
+// Console.WriteLine($"Сумма всех чисел, кроме кратных 3: {sum}");
+
+
 //10
+// int a = 10;
+
+// int a1 = 1;
+// int a2 = 1;
+
+// while (true)
+// {
+//    int b = a1 + a2;
+
+//    if (b > a)
+//    {
+//       Console.WriteLine("Ответ " + b);
+//       break;
+//    }
+//    a1 = a2;
+//    a2 = b;
+
+// }
